@@ -1,0 +1,1442 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "restaurant",
+    "model": "booking"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "restaurant",
+    "model": "employees"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "restaurant",
+    "model": "menu"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "restaurant",
+    "model": "menuitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "authtoken",
+    "model": "token"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "authtoken",
+    "model": "tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add booking",
+    "content_type": [
+      "restaurant",
+      "booking"
+    ],
+    "codename": "add_booking"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change booking",
+    "content_type": [
+      "restaurant",
+      "booking"
+    ],
+    "codename": "change_booking"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete booking",
+    "content_type": [
+      "restaurant",
+      "booking"
+    ],
+    "codename": "delete_booking"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view booking",
+    "content_type": [
+      "restaurant",
+      "booking"
+    ],
+    "codename": "view_booking"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add employees",
+    "content_type": [
+      "restaurant",
+      "employees"
+    ],
+    "codename": "add_employees"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change employees",
+    "content_type": [
+      "restaurant",
+      "employees"
+    ],
+    "codename": "change_employees"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete employees",
+    "content_type": [
+      "restaurant",
+      "employees"
+    ],
+    "codename": "delete_employees"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view employees",
+    "content_type": [
+      "restaurant",
+      "employees"
+    ],
+    "codename": "view_employees"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add menu",
+    "content_type": [
+      "restaurant",
+      "menu"
+    ],
+    "codename": "add_menu"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change menu",
+    "content_type": [
+      "restaurant",
+      "menu"
+    ],
+    "codename": "change_menu"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete menu",
+    "content_type": [
+      "restaurant",
+      "menu"
+    ],
+    "codename": "delete_menu"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view menu",
+    "content_type": [
+      "restaurant",
+      "menu"
+    ],
+    "codename": "view_menu"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add menu item",
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "codename": "add_menuitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change menu item",
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "codename": "change_menuitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete menu item",
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "codename": "delete_menuitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view menu item",
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "codename": "view_menuitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "add_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "change_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "delete_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "view_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "add_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "change_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "delete_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "view_tokenproxy"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Manager",
+    "permissions": [
+      [
+        "add_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "view_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "add_group",
+        "auth",
+        "group"
+      ],
+      [
+        "view_group",
+        "auth",
+        "group"
+      ],
+      [
+        "add_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "view_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "add_user",
+        "auth",
+        "user"
+      ],
+      [
+        "change_user",
+        "auth",
+        "user"
+      ],
+      [
+        "delete_user",
+        "auth",
+        "user"
+      ],
+      [
+        "view_user",
+        "auth",
+        "user"
+      ],
+      [
+        "add_token",
+        "authtoken",
+        "token"
+      ],
+      [
+        "change_token",
+        "authtoken",
+        "token"
+      ],
+      [
+        "delete_token",
+        "authtoken",
+        "token"
+      ],
+      [
+        "view_token",
+        "authtoken",
+        "token"
+      ],
+      [
+        "add_tokenproxy",
+        "authtoken",
+        "tokenproxy"
+      ],
+      [
+        "change_tokenproxy",
+        "authtoken",
+        "tokenproxy"
+      ],
+      [
+        "delete_tokenproxy",
+        "authtoken",
+        "tokenproxy"
+      ],
+      [
+        "view_tokenproxy",
+        "authtoken",
+        "tokenproxy"
+      ],
+      [
+        "add_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "change_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "view_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "add_booking",
+        "restaurant",
+        "booking"
+      ],
+      [
+        "change_booking",
+        "restaurant",
+        "booking"
+      ],
+      [
+        "delete_booking",
+        "restaurant",
+        "booking"
+      ],
+      [
+        "view_booking",
+        "restaurant",
+        "booking"
+      ],
+      [
+        "add_employees",
+        "restaurant",
+        "employees"
+      ],
+      [
+        "change_employees",
+        "restaurant",
+        "employees"
+      ],
+      [
+        "delete_employees",
+        "restaurant",
+        "employees"
+      ],
+      [
+        "view_employees",
+        "restaurant",
+        "employees"
+      ],
+      [
+        "add_menu",
+        "restaurant",
+        "menu"
+      ],
+      [
+        "change_menu",
+        "restaurant",
+        "menu"
+      ],
+      [
+        "view_menu",
+        "restaurant",
+        "menu"
+      ],
+      [
+        "add_menuitem",
+        "restaurant",
+        "menuitem"
+      ],
+      [
+        "change_menuitem",
+        "restaurant",
+        "menuitem"
+      ],
+      [
+        "delete_menuitem",
+        "restaurant",
+        "menuitem"
+      ],
+      [
+        "view_menuitem",
+        "restaurant",
+        "menuitem"
+      ],
+      [
+        "add_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "change_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "delete_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "view_session",
+        "sessions",
+        "session"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$zubFZIfspCxIwKz4GnWsde$EBZm6hWa8iVFc7bV5lOFzZPMHUX/8M0QfbYPHlDXnYc=",
+    "last_login": "2024-02-19T15:32:12.211Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-02-19T15:21:28.236Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$OZCEMhw04pWyBX758HZJAg$EBWCjnnlFEaTjEbDvf3BE+ag1TNarRAm0eFwvVrTLC4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "testuser",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-02-19T15:23:27Z",
+    "groups": [
+      [
+        "Manager"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$nipQUa6KISQkLBCbcheuad$pnKkn3oa6oChLPzSOHpgZ2CtSKLpUc3VWxtS3QLEdQY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "testuser_2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-02-19T15:23:42Z",
+    "groups": [],
+    "user_permissions": [
+      [
+        "add_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "change_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "delete_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "view_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "add_group",
+        "auth",
+        "group"
+      ],
+      [
+        "change_group",
+        "auth",
+        "group"
+      ],
+      [
+        "delete_group",
+        "auth",
+        "group"
+      ],
+      [
+        "view_group",
+        "auth",
+        "group"
+      ],
+      [
+        "add_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "change_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "delete_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "view_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "add_user",
+        "auth",
+        "user"
+      ],
+      [
+        "change_user",
+        "auth",
+        "user"
+      ],
+      [
+        "delete_user",
+        "auth",
+        "user"
+      ],
+      [
+        "view_user",
+        "auth",
+        "user"
+      ],
+      [
+        "add_token",
+        "authtoken",
+        "token"
+      ],
+      [
+        "change_token",
+        "authtoken",
+        "token"
+      ],
+      [
+        "delete_token",
+        "authtoken",
+        "token"
+      ],
+      [
+        "view_token",
+        "authtoken",
+        "token"
+      ],
+      [
+        "add_tokenproxy",
+        "authtoken",
+        "tokenproxy"
+      ],
+      [
+        "change_tokenproxy",
+        "authtoken",
+        "tokenproxy"
+      ],
+      [
+        "delete_tokenproxy",
+        "authtoken",
+        "tokenproxy"
+      ],
+      [
+        "view_tokenproxy",
+        "authtoken",
+        "tokenproxy"
+      ],
+      [
+        "add_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "change_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "delete_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "view_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "add_booking",
+        "restaurant",
+        "booking"
+      ],
+      [
+        "change_booking",
+        "restaurant",
+        "booking"
+      ],
+      [
+        "delete_booking",
+        "restaurant",
+        "booking"
+      ],
+      [
+        "view_booking",
+        "restaurant",
+        "booking"
+      ],
+      [
+        "add_employees",
+        "restaurant",
+        "employees"
+      ],
+      [
+        "change_employees",
+        "restaurant",
+        "employees"
+      ],
+      [
+        "delete_employees",
+        "restaurant",
+        "employees"
+      ],
+      [
+        "view_employees",
+        "restaurant",
+        "employees"
+      ],
+      [
+        "add_menu",
+        "restaurant",
+        "menu"
+      ],
+      [
+        "change_menu",
+        "restaurant",
+        "menu"
+      ],
+      [
+        "delete_menu",
+        "restaurant",
+        "menu"
+      ],
+      [
+        "view_menu",
+        "restaurant",
+        "menu"
+      ],
+      [
+        "add_menuitem",
+        "restaurant",
+        "menuitem"
+      ],
+      [
+        "change_menuitem",
+        "restaurant",
+        "menuitem"
+      ],
+      [
+        "delete_menuitem",
+        "restaurant",
+        "menuitem"
+      ],
+      [
+        "view_menuitem",
+        "restaurant",
+        "menuitem"
+      ],
+      [
+        "add_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "change_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "delete_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "view_session",
+        "sessions",
+        "session"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$iBvMjaPFecRLJjEstgLivU$3fcGjR40u9Gig0cN4+MAIG3GbnXOJnScHDFk1r/vA10=",
+    "last_login": "2024-02-19T15:29:45.532Z",
+    "is_superuser": false,
+    "username": "testuser_3",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-02-19T15:28:14Z",
+    "groups": [
+      [
+        "Manager"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "0bc57e8029b42b73652396c46ff9ce6cdc099812",
+  "fields": {
+    "user": [
+      "testuser"
+    ],
+    "created": "2024-02-19T15:27:13.774Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "18a9bd083ea30cdde0d673e2a18892d1dba5e659",
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "created": "2024-02-19T15:26:41.245Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "bc84c1833d729d2c2f16b0c87e3f9875a792c7d8",
+  "fields": {
+    "user": [
+      "testuser_3"
+    ],
+    "created": "2024-02-19T15:29:45.527Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "bdf6283c59834468eb233c90392f94c16f8e7f4a",
+  "fields": {
+    "user": [
+      "testuser_2"
+    ],
+    "created": "2024-02-19T15:27:42.453Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-02-19T15:23:27.394Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "testuser",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-02-19T15:23:43.218Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "testuser_2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-02-19T15:24:28.149Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "testuser_2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-02-19T15:24:40.958Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "testuser",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-02-19T15:25:49.794Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "1",
+    "object_repr": "Manager",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-02-19T15:26:07.400Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "testuser",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-02-19T15:26:41.246Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "object_id": "1",
+    "object_repr": "18a9bd083ea30cdde0d673e2a18892d1dba5e659",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-02-19T15:27:13.775Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "object_id": "2",
+    "object_repr": "0bc57e8029b42b73652396c46ff9ce6cdc099812",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-02-19T15:27:42.454Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "object_id": "3",
+    "object_repr": "bdf6283c59834468eb233c90392f94c16f8e7f4a",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-02-19T15:28:14.949Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "testuser_3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-02-19T15:28:20.934Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "testuser_3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Groups\"]}}]"
+  }
+}
+]
