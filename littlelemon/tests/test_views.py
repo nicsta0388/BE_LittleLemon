@@ -1,40 +1,33 @@
 from django.test import TestCase
+from django.urls import reverse
+from rest_framework import status
 from rest_framework.test import APIClient
-from .models import Menu
-from .serializers import MenuSerializer
-from restaurant.views import MenuItemsView
+from restaurant.models import Menu, MenuItem
+from restaurant.serializers import MenuSerializer, MenuItemSerializer
+from rest_framework import routers
+import requests
+
 
 class MenuViewTest(TestCase):
     def setUp(self):
-        self.client = APIClient()
-        self.menu_item1 = Menu.objects.create(title="Burger", price=10.99, inventory=50)
-        self.menu_item2 = Menu.objects.create(title="Pizza", price=12.99, inventory=40)
+        # Add test instances of the Menu model
+        MenuItem.objects.create(title="Menu1", price=10, inventory=50)
+        MenuItem.objects.create(title="Menu2", price=15, inventory=30)
+        MenuItem.objects.create(title="Menu3", price=20, inventory=20)
 
     def test_getall(self):
-        response = self.client.get('/restaurant/menu/items/')
-        menu_items = Menu.objects.all()
-        serializer = MenuSerializer(menu_items, many=True)
-        self.assertEqual(response.data, serializer.data)
-        self.assertEqual(response.status_code, 200)
+        # Get all Menu objects using the API
+        headers = {'Authorization': 'Token f772229e97111a3f7a29979b5e0b5dbb8de658f6'}
+        res = requests.get("http://localhost:8000/routers/menu-items/", headers=headers)
+        client = APIClient(enforce_csrf_checks=False)
+        url = ("http://localhost:8000/routers/menu-items/")
+        response = client.get(url,headers=headers)
+        menus = MenuItem.objects.all
+        serializer = MenuItemSerializer(MenuItem.objects, many=True)
 
-# class MenuViewTest(TestCase):
-#     def setUp(self):
-#         menu_list = []
-#         pizza = Menu.objects.create(title="Pizza", price=80, inventory=100)
-#         lasagna = Menu.objects.create(title="Lasagna", price=23, inventory=456)
-#         spaguetti = Menu.objects.create(title="Spaguetti", price=58, inventory=123)
-#         menu_list.append(pizza)
-#         menu_list.append(lasagna)
-#         menu_list.append(spaguetti)
-#         self.menu_list = menu_list
-#         self.factory = RequestFactory()
-#         self.user = User.objects.create_user(
-#             username="jacob", email="jacob@…", password="top_secret"
-#         )
-    
-#     def test_getall(self):
-#         request = self.factory.get("/api/menu")
-#         request.user = self.user
-#         response = MenuItemsView.as_view()(request)
-#         self.assertEqual(response.status_code, 200)
+        # Check if the response status code is 200 (OK)
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+        #self.assertEqual(response, status.HTTP_200_OK)
+        # Check if the serialized data equals the response data
+        self.assertEqual(response.data, serializer.data)
         
