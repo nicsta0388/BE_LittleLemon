@@ -1,3 +1,6 @@
+1: Use pipenv install in the folder where the pipfile is, run pipenv shell then run python manage.py runserver
+
+
 Superuser Django-Admin:
 username: admin
 password: admin
