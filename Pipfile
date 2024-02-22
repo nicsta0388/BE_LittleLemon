@@ -19,6 +19,8 @@ requests-oauthlib = "*"
 social-auth-app-django = "*"
 social-auth-core = "*"
 sqlparse = "*"
+django-extensions = "*"
+uritemplate = "*"
 
 [dev-packages]
 

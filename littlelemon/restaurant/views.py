@@ -30,7 +30,7 @@ def index(request):
 
 
 
-class MenuItemsView(viewsets.ModelViewSet): # , generics.ListCreateAPIView, generics.DestroyAPIView):
+class MenuItemsView(viewsets.ModelViewSet, generics.RetrieveUpdateAPIView, generics.DestroyAPIView): # , generics.ListCreateAPIView, generics.DestroyAPIView):
     #permission_classes = [IsAuthenticated]
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
